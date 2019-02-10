@@ -1,0 +1,14 @@
+public static void insert(ArrayList<character> clist, char c)
+{
+
+clist.add(c);
+}
+
+// Function to count frequency of element
+public static void freq(ArrayList<character> clist, char c)
+{
+
+Iterator it=clist.iterator();
+int count=0;
+
+for(int i=0;i<clist.size();i++) {="" if(clist.get(i)="=c)" count++;="" }="" if(count="=0)" system.out.println("not="" present");="" else="" system.out.println(count);="" }="">
