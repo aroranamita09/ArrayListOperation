@@ -1,8 +1,5 @@
 {
-//Initial Template for Java
 import java.util.*;
-//Position this line where user code will be pasted.
-// Driver class with driver code
 class GFG 
 {
 	// Driver code
