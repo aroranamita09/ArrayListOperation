@@ -1,6 +1,7 @@
+package com.stackroute;
 {
 import java.util.*;
-class GFG 
+class ArrayListOperation 
 {
 	// Driver code
 	public static void main (String[] args) 
@@ -49,14 +50,14 @@ Driver Code to call/invoke your function is mentioned above.*/
 class Geeks
 {
     // Function to insert element
-    public static void insert(ArrayList<Character> clist, char c)
+     static void insert(ArrayList<Character> clist, char c)
     {
         
         //add c to clist
     }
     
     // Function to count frequency of element
-    public static void freq(ArrayList<Character> clist, char c)
+     static void freq(ArrayList<Character> clist, char c)
     {
      
         if(/*Your code here*/)
