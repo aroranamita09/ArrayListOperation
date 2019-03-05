@@ -1,70 +1,22 @@
 package com.stackroute;
-{
-import java.util.*;
-class ArrayListOperation 
-{
-	// Driver code
-	public static void main (String[] args) 
-	{
-		Scanner sc = new Scanner(System.in);
-		int t = sc.nextInt();
-		
-		while(t-- > 0)
-		{
-		    // Declaring ArrayList 
-		    ArrayList<Character> clist = new ArrayList<Character>();
-		    
-		    int q = sc.nextInt();
-		    
-		    // Looping for queries
-		    while(q-- > 0)
-		    {
-		       char ch = sc.next().charAt(0);
-		       Geeks obj = new Geeks();
-		       
-		       if(ch == 'i')
-		       {
-    		       char c = sc.next().charAt(0);
-    		       obj.insert(clist, c);
-		       }
-		    
-		       if(ch == 'f')
-		       {
-    		        char c = sc.next().charAt(0);
-    		        obj.freq(clist, c);
-		       }
-		    }
-		}
-	}
-}
-}
+import java.util.ArrayList;
+import java.util.Collections;
 
-/*Please note that it's Function problem i.e.
-you need to write your solution in the form of Function(s) only.
-Driver Code to call/invoke your function is mentioned above.*/
+class ArrayListOperation{
 
-//User function Template for Java
-// Geeks clas with functions insert and freq
-// insert : to insert element into ArrayList
-// freq : function to count frequency of element
-class Geeks
-{
-    // Function to insert element
-     static void insert(ArrayList<Character> clist, char c)
-    {
-        
-        //add c to clist
-    }
-    
-    // Function to count frequency of element
-     static void freq(ArrayList<Character> clist, char c)
-    {
-     
-        if(/*Your code here*/)
-        System.out.println(/*Your code here*/);
-        else
-        System.out.println("Not Present");
-        
+
+    public int freq(ArrayList<Character> clist, char c) {
+        clist.add(c);
+        if (Collections.frequency(clist, c) != 0) {
+            System.out.println(Collections.frequency(clist, c));
+            return Collections.frequency(clist, c);
+        } else {
+            System.out.println("Not Present");
+            return Collections.frequency(clist, c);
+        }
     }
 }
+
+
+
 

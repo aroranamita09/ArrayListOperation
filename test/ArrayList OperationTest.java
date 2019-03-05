@@ -1,27 +1,33 @@
 package com.stackroute;
 
-import org.junit.*;
-@Test
-public void testinsert(ArrayList<character> clist, char c){
-clist.add(c);
-// Function to test count frequency of element
- static void freq(ArrayList<character> clist, char c)
-{
-Iterator it=clist.iterator();
-int count=0;
-for(int i=0;i<clist.size();i++) 
-{="" if(clist.get(i)="=c)" count++;="" }="" if(count="=0)" system.out.println("not="" present");="" else="" system.out.println(count);="" }="">
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.*;
+public class ArrayListOperationTest {
 
-    }}
-     class testinsert {
+    ArrayList<Character> arrayList=new ArrayList();
+    ArrayListOperation obj ;
+    @Before
+    public void setUp() throws Exception {
+           obj = new ArrayListOperation();
+    }
+
+    @After
+    public void tearDown() throws Exception {
+        obj = null;
+    }
     @Test
-    public void testfreqCount() throws Exception{
-        String expectedValue = "not present";
-        Gfg data=new Gfg();
-        String actualValue=data.freq("");
-        assertEquals(expectedValue, actualValue);
+    public void testArrayList() {
+        arrayList.add('i');
+        arrayList.add('g');
+        arrayList.add('i');
+        arrayList.add('e');
+        arrayList.add('i');
+        arrayList.add('k');
+        assertEquals(2,obj.freq(arrayList,'g'));
 
-}}
-   
-
+    }
+}
 
